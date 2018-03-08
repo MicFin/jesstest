@@ -1,6 +1,33 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-p {
+p.one {
+  // worked locally
   background-image: url('~/public/cowboy-caleb.png');
+}
+
+p.two {
+  background-image: url('../../public/cowboy-caleb.png');
+}
+
+p.three {
+  // worked locally
+  background-image: url('./~/public/cowboy-caleb.png');
+}
+
+p.four {
+  // broke locally
+  // background-image: url('public/cowboy-caleb.png');
+}
+
+p.five {
+  background-image: url('/jesstest/public/cowboy-caleb.png');
+}
+
+p.six {
+  background-image: url('/jesstest/public/cowboy-caleb.png');
+}
+
+p.seven {
+  background-image: url('/~/public/cowboy-caleb.png');
 }
